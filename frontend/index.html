@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <style>@import url('https://fonts.googleapis.com/css?family=Heebo:900&display=swap'); </style>
+    <title>World Cravings</title>
+</head>
+<header>
+    <img class="logo" src="logo.png"/>
+</header>
+    <div class="left-main">
+        <form class="create-user" action="http://localhost:3000/users" method="POST">
+            <label for="name">Who are you?</label>
+                <input type="text" name="name" id="name" placeholder="Big Mouth"/>
+            <label for="image">Image</label>
+                <input type="text" name="image" id="profile" placeholder="Your best selfie.."/>
+                <input type="submit"/>
+        </form>
+    </div>
+    <script src="app.js"></script>
+</html>
