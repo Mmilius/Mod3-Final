@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <style>@import url('https://fonts.googleapis.com/css?family=Heebo:900&display=swap'); </style>
+    <title>World Foods</title>
+</head>
+<header>
+    <img class="logo" src="logo.png"/>
+    <p>Countries' Favorite Foods </p>
+</header>
+<form class="create-food" action="http://localhost:3000/foods" method="POST">
+    <label for="name">Food Name</label>
+        <input type="text" name="name" id="name" placeholder="Pizza"/>
+        
+    <label for="description">Food Description</label>
+        <input type="text" name="description" id="description" placeholder="Flat bread with sauce and toppings."/>
+
+     <label for="ingredients">Food Ingredients</label>
+        <input type="text" name="ingredients" id="ingredients" placeholder="Wheat Flour, Roma Tomatos, Basil, Cheese."/>
+    
+    <label for="origin-dropdown">Country</label>
+        <select name="origin_id" id="origin-dropdown"></select>
+
+    <lavel for="user-dropdown">Author</lavel>
+        <select name="user_id" id="user-dropdown"></select>
+
+        <input type="submit"/>
+</form>
+    <script src="foods.js"></script>
+</html>

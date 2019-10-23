@@ -74,18 +74,22 @@ header{
 .create-user{
     background-color: white;
     margin-bottom: 50px;
+    margin-left: 20px;
+    margin-right: 20px;
+    display: inline-block;
 }
+
+input[type=text], select {
+    padding: 10px;
+    margin: 8px 0;
+    border-radius: 5px;
+
+  }
 
 li {
     list-style-type: none;
 }
 
-input[type=text], select {
-    width: 30%;
-    padding: 10px;
-    margin: 8px 0;
-    border-radius: 5px;
-  }
 
 .user-stack{
     display: flex;
@@ -99,6 +103,7 @@ input[type=text], select {
     margin: auto;
     text-align: center;
     background: green;
+    margin-bottom: 50px;
 }
 
 .userName{
@@ -110,6 +115,24 @@ input[type=text], select {
 img{
     width: 100%;
 }
+
+.foodFlag{
+    width: 50px;
+}
+
+
+.create-food, input, select{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    display: block;
+    position: center;
+    background-color: white;
+}
+
 
 .flag{
     background-color: white;

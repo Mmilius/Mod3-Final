@@ -14,7 +14,14 @@ class UsersController < ApplicationController
             name: params[:name],
             image: params[:image]
         })
-        redirect_to "http://localhost:3000"
+        redirect_to "http://localhost:3001"
+    end
+
+    def destroy 
+        @user = User.find(params[:id])
+            if @user.present?
+                @user.destroy
+            end
     end
 
 end
