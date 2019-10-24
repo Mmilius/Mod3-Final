@@ -10,25 +10,36 @@
 </head>
 <header>
     <img class="logo" src="logo.png"/>
+    <br>
     <p>Countries' Favorite Foods </p>
+    <br>
 </header>
+<div class="button-head">
+<button id="myBtn">Create a Food</button>
+</div>
+<div id="myModal" class="modal">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+
 <form class="create-food" action="http://localhost:3000/foods" method="POST">
     <label for="name">Food Name</label>
-        <input type="text" name="name" id="name" placeholder="Pizza"/>
+        <input type="text" name="name" id="food-for-name" placeholder="Pizza"/>
         
     <label for="description">Food Description</label>
-        <input type="text" name="description" id="description" placeholder="Flat bread with sauce and toppings."/>
+        <input type="text" name="description" id="food-form-description" placeholder="Flat bread with sauce and toppings."/>
 
      <label for="ingredients">Food Ingredients</label>
-        <input type="text" name="ingredients" id="ingredients" placeholder="Wheat Flour, Roma Tomatos, Basil, Cheese."/>
+        <input type="text" name="ingredients" id="food-form-ingredients" placeholder="Wheat Flour, Roma Tomatos, Basil, Cheese."/>
     
     <label for="origin-dropdown">Country</label>
-        <select name="origin_id" id="origin-dropdown"></select>
+        <select name="origin_id" id="food-origin-dropdown"></select>
 
     <lavel for="user-dropdown">Author</lavel>
-        <select name="user_id" id="user-dropdown"></select>
+        <select name="user_id" id="food-user-dropdown"></select>
 
-        <input type="submit"/>
+        <input type="submit" id="food-submit"/>
 </form>
+</div>
+</div>
     <script src="foods.js"></script>
 </html>

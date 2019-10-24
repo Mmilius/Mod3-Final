@@ -1,5 +1,22 @@
 const body = document.body
 
+const modal = document.getElementById("myModal")
+btn = document.getElementById("myBtn")
+span = document.getElementsByClassName("close")[0]
+btn.onclick = function (){
+    modal.style.display = "block"
+}
+
+span.onclick = function () {
+    modal.style.display = "none"
+}
+
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none"
+    }
+}
+
 const foodStack = document.createElement("div")
     foodStack.className = "foodCards"
 
@@ -12,13 +29,13 @@ function createFoods(foods){
             flag.className = "foodFlag"
 
         let name = document.createElement("h2")
-            name.className = "name"
+            name.className = "foodName"
 
         let description = document.createElement("p")
-            description.className = "description"
+            description.className = "foodDescription"
 
         let ingredients = document.createElement("p")
-            ingredients.className = "ingredients"
+            ingredients.className = "foodIngredients"
         
         let author = document.createElement("p")
             author.className = "author"
@@ -28,17 +45,18 @@ function createFoods(foods){
             updateFood.addEventListener("click", () => editFood(event, food.id))
         
         let removeFood = document.createElement("button")
+            removeFood.className = "removeFood"
             removeFood.innerText = "Delete"
             removeFood.addEventListener("click", () => deleteFood(event, food.id))
         
         //let authorPhoto = document.createElement("img")
           //  authorPhoto.className = "food-authorphoto"
       
-        name.innerText = `Name: ${food.name}`
-        description.innerText = `Description: ${food.description}`
-        ingredients.innerText = `Ingredients: ${food.ingredients}`
+        name.innerText = food.name
+        description.innerText = food.description
+        ingredients.innerText = `Ingredients:\n ${food.ingredients}`
         flag.src = food.origin.flag
-        author.innerText = `Author: ${food.user.name}`
+        author.innerText = `Submitted by ${food.user.name}`
        // authorPhoto.src = food.user.image
 
         foodCard.append(name, description, ingredients, flag, author, updateFood, removeFood) //authorPhoto
@@ -62,7 +80,7 @@ const deleteFood = (event, id) => {
 
 
 function createOriginOption(origins){
-    let originDropdown = document.getElementById("origin-dropdown")
+    let originDropdown = document.getElementById("food-origin-dropdown")
         origins.forEach(origin => {
             let option = document.createElement("option")
                 option.innerText = origin.name
@@ -72,7 +90,7 @@ function createOriginOption(origins){
 }
 
 function createUserOption(users){
-    let userDropdown = document.getElementById("user-dropdown")
+    let userDropdown = document.getElementById("food-user-dropdown")
         users.forEach(user => {
             let option = document.createElement("option")
                 option.innerText = user.name

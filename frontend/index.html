@@ -10,15 +10,29 @@
 </head>
 <header>
     <img class="logo" src="logo.png"/>
+    <br>
+    <h1>Welcome!</h1>
+    <br>
 </header>
-    <div class="left-main">
+<div class="user-entry">
+    <button id="userBtn">New User</button>
+    <button id="returnUser">Returning User</button>
+    <button id="viewFoods" onclick="window.location.href=`http://localhost:3001/foods.html`">View All Foods</button>
+    <button id="viewOrigins" onclick="window.location.href=`http://localhost:3001/origins.html`">View All Coutries</button>
+</div>
+<div id="userModal" class="userModal">
+        <div class="user-modal-content">
+            <span class="user-close">&times;</span>
+
         <form class="create-user" action="http://localhost:3000/users" method="POST">
             <label for="name">Who are you?</label>
-                <input type="text" name="name" id="name" placeholder="Big Mouth"/>
+                <input type="text" name="name" id="user-create-name" placeholder="Big Mouth"/>
             <label for="image">Image</label>
-                <input type="text" name="image" id="profile" placeholder="Your best selfie.."/>
-                <input type="submit"/>
+                <input type="text" name="image" id="user-create-photo" placeholder="Your best selfie.."/>
+                <input type="submit" id="user-create-submit"/>
         </form>
     </div>
+    </div>
+
     <script src="app.js"></script>
 </html>
