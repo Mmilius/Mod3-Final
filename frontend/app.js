@@ -30,6 +30,7 @@ function userList(users){
     
         let profile = document.createElement('img')
              profile.src = user.image
+             profile.className = "user-profile-image"
 
         let userName = document.createElement("a")
             userName.className="userName"

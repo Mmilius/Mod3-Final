@@ -6,23 +6,25 @@ const body = document.body
 
 
 const userStack = document.createElement("div")
-    userStack.className = "user-stack"
+    userStack.className = "user-page-stack"
 
 function userList(users){
     users.forEach(user =>{
         if (user.id == query){
         let userCard = document.createElement("div")
-            userCard.className = "user-profile-card"
+            userCard.className = "user-page-profile-card"
     
         let profile = document.createElement('img')
              profile.src = user.image
+             profile.className = "user-page-profile"
 
         let userName = document.createElement("h2")
-            userName.className="userName"
-            userName.innerText = user.name
+            userName.className ="user-page-name"
+            userName.innerText = `Hi, \n ${user.name}`
 
         let removeUser = document.createElement("button")
             removeUser.innerText = "Delete"
+            removeUser.className = "user-page-delete"
             removeUser.addEventListener("click", () => deleteUser(event, user.id))
 
 
@@ -48,13 +50,13 @@ function userFoods(foods){
             flag.className = "foodFlag"
 
         let name = document.createElement("h2")
-            name.className = "name"
+            name.className = "userFoodName"
 
         let description = document.createElement("p")
-            description.className = "description"
+            description.className = "userFoodDescription"
 
         let ingredients = document.createElement("p")
-            ingredients.className = "ingredients"
+            ingredients.className = "userFoodIngredients"
         
         let author = document.createElement("p")
             author.className = "author"
@@ -66,9 +68,9 @@ function userFoods(foods){
         //let authorPhoto = document.createElement("img")
           //  authorPhoto.className = "food-authorphoto"
       
-        name.innerText = `Name: ${food.name}`
-        description.innerText = `Description: ${food.description}`
-        ingredients.innerText = `Ingredients: ${food.ingredients}`
+        name.innerText = food.name
+        description.innerText = food.description
+        ingredients.innerText = `Ingredients: \n${food.ingredients}`
         flag.src = food.origin.flag
         author.innerText = `Author: ${food.user.name}`
        // authorPhoto.src = food.user.image
