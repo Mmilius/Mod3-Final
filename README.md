@@ -23,7 +23,7 @@
 ![User Page](https://github.com/Mmilius/Mod3-Final/blob/master/Screen%20Shot%202019-10-25%20at%201.13.05%20PM.png?raw=true)
 
 <br>
-![Create Food Form] (https://github.com/Mmilius/Mod3-Final/blob/master/Screen%20Shot%202019-10-25%20at%201.13.34%20PM.png?raw=true)
+![Create Food Form](https://github.com/Mmilius/Mod3-Final/blob/master/Screen%20Shot%202019-10-25%20at%201.13.34%20PM.png?raw=true)
 
 <h2>Set Up and Install Instructions</h2>
 <ol>
