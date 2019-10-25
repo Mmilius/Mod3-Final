@@ -8,7 +8,7 @@
 <li>View all countries.</li>
 </ul>
 
-![Home Page](link-to-image)
+![Home Page](https://github.com/Mmilius/Mod3-Final/blob/master/Screen%20Shot%202019-10-25%20at%2012.05.41%20PM.png?raw=true)
 
 <h2>Technology</h2>
 <ul>
