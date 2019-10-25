@@ -22,9 +22,6 @@
 
 ![User Page](https://github.com/Mmilius/Mod3-Final/blob/master/Screen%20Shot%202019-10-25%20at%201.13.05%20PM.png?raw=true)
 
-<br>
-![Create Food Form](https://github.com/Mmilius/Mod3-Final/blob/master/Screen%20Shot%202019-10-25%20at%201.13.34%20PM.png?raw=true)
-
 <h2>Set Up and Install Instructions</h2>
 <ol>
   <li>Fork and clone down this repository</li>
@@ -33,6 +30,8 @@
   <li>Seed your database with rails db:seed command</li>
   <li>Run rails s and navigate to your localhost in your web browser</li>
   </ol>
+  <br>
+![Create Food Form](https://github.com/Mmilius/Mod3-Final/blob/master/Screen%20Shot%202019-10-25%20at%201.13.34%20PM.png?raw=true)
   
 <h2>Future Plans</h2>
 <ul>
