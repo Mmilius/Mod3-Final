@@ -22,13 +22,13 @@
 
 <h2>Set Up and Install Instructions</h2>
 <ol>
-<li>Fork and clone down this repository</li>
-<li>Bundle install Gems</li>
-<li>Rails db:migrate<li>
-<li>Seed your database with rails db:seed command</li>
-<li>Run rails s and navigate to your localhoast in your web browser<li>
-</ol>
-
+  <li>Fork and clone down this repository</li>
+  <li>Bundle install Gems</li>
+  <li>Rails db:migrate</li>
+  <li>Seed your database with rails db:seed command</li>
+  <li>Run rails s and navigate to your localhost in your web browser</li>
+  </ol>
+  
 <h2>Future Plans</h2>
 <ul>
 <li>Allow users to secure their information with a login and password</li>
