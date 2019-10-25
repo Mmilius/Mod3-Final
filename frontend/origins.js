@@ -1,18 +1,22 @@
 const body = document.body
 
-function createCountries(countries){
-    let div = document.createElement("div")
-    div.className = "countryCards"
+const div = document.createElement("div")
+div.className = "countryCards"
 
+function createCountries(countries){
     countries.forEach(country =>{
         let divCard = document.createElement("div")
             divCard.className = "eachCountryCard"
+
         let flag = document.createElement("IMG")
             flag.className = "flag"
+
         let name = document.createElement("h2")
             name.className = "countryName"
+
         let region = document.createElement("p")
             region.className = "regionName"
+            
         let subRegion = document.createElement("p")
             subRegion.className = "subregionName"
       

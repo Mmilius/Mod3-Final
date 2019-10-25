@@ -60,7 +60,7 @@ body{
     background-size: 100%;
     background-attachment: fixed;
     background-position: center;
-    background-repeat: no-repeat;
+    background-repeat: no-repeat
 }
 
 header{
@@ -96,23 +96,28 @@ li {
 
 .user-profile-card{
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    max-width: 100px;
+    max-width: 200px;
     margin: auto;
     text-align: center;
     background: #a8ac42;
-    margin-bottom: 20px;
+    margin-bottom: 50px;
+    padding: 30px;
+    border-color: white;
+    border-radius: 15px
 }
 
 .user-profile-image{
   width: 100%;
+  margin-bottom: 15px;
 }
 
 .userName{
   color:white;
-  font-size: 18px;
+  font-size: 40px;
   padding: 10px;
   text-decoration: none;
   margin-bottom: 30px;
+  font-family: 'Barrio', cursive;
 }
 
 .foodFlag{
@@ -184,8 +189,9 @@ li {
 
 .foodName{
     margin-bottom: 5px;
-    font-size: 25px;
+    font-size: 40px;
     color:  #820428;
+    font-family: 'Barrio', cursive;
 }
 
 .foodDescription{
@@ -219,24 +225,43 @@ li {
 }
 
 .flag{
+    width: 50px;
     background-color: white;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    width: 20%;
     margin-bottom: 10px;
 }
 
+.countryCards{
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  margin-top: 15px
+}
+
 .countryName{
-    margin-bottom: 10px;
-    font-weight: 900;
-    font-size: 200%;
+    font-size: 20px;
+    margin-bottom: 5px
 }
+
+.regionName{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.subregionName{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
 .eachCountryCard{
-    display: flex;
-    flex-direction: column;
-    padding: 20px;
-    margin-bottom: 15px;
-    flex-wrap: wrap;
-}
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  padding: 20px;
+  margin-bottom: 15px;
+  background-color: white;
+  border-radius: 15px;
+  margin-right: 5px;
+  margin-left: 5px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}  
 
 
 /* The Modal (background) */
@@ -475,10 +500,11 @@ li {
 .user-page-profile{
   width: 300px;
   height: 300px;
-  margin-right: 20px; 
+  margin-right: 5px; 
+  margin-left: 5px;
   border-radius: 50%;
   vertical-align: middle;
-  padding: 20px
+  padding: 25px
 
 }
 
@@ -486,9 +512,9 @@ li {
 .user-page-name{
   color: #820428;
   margin-top: 10px;
-  margin-right: 20px;
   align-self: center;
-  font-size: 40px;
+  font-size: 50px;
+  font-family: 'Barrio', cursive;
 }
 
 .user-page-delete{
@@ -501,7 +527,9 @@ li {
 
 .userFoodName{
   color:  #820428;
-  margin-bottom: 10px
+  margin-bottom: 10px;
+  font-family: 'Barrio', cursive;
+  font-size: 25px
 }
 
 .userFoodDescription{
@@ -513,4 +541,12 @@ li {
   margin-bottom: 10px;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   line-height: 1.6;
+}
+
+.user-food-delete{
+  align-self: flex-end;
+  background-color: red;
+  color: white;
+  font-size: 10px;
+  text-transform: uppercase;
 }

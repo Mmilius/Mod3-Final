@@ -23,5 +23,4 @@ class UsersController < ApplicationController
                 @user.destroy
             end
     end
-
 end

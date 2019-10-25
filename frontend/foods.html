@@ -6,10 +6,13 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="style.css">
     <style>@import url('https://fonts.googleapis.com/css?family=Heebo:900&display=swap'); </style>
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Barrio&display=swap');
+        </style>
     <title>World Foods</title>
 </head>
 <header>
-    <img class="logo" src="logo.png"/>
+    <a href = "http://localhost:3001"> <img class="logo" src="logo.png" /> </a>
     <br>
     <p>Countries' Favorite Foods </p>
     <br>
@@ -23,7 +26,7 @@
 
 <form class="create-food" action="http://localhost:3000/foods" method="POST">
     <label for="name">Food Name</label>
-        <input type="text" name="name" id="food-for-name" placeholder="Pizza"/>
+        <input type="text" name="name" id="food-form-name" placeholder="Pizza"/>
         
     <label for="description">Food Description</label>
         <input type="text" name="description" id="food-form-description" placeholder="Flat bread with sauce and toppings."/>

@@ -63,6 +63,7 @@ function userFoods(foods){
         
         let removeFood = document.createElement("button")
             removeFood.innerText = "Delete"
+            removeFood.className = "user-food-delete"
             removeFood.addEventListener("click", () => deleteFood(event, food.id))
         
         //let authorPhoto = document.createElement("img")
