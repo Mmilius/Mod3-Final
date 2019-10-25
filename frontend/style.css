@@ -188,7 +188,7 @@ li {
 }
 
 .foodName{
-    margin-bottom: 5px;
+    margin-bottom: 10px;
     font-size: 40px;
     color:  #820428;
     font-family: 'Barrio', cursive;
@@ -200,9 +200,9 @@ li {
 }
 
 .foodIngredients{
-    margin-bottom: 10px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     line-height: 1.6;
+    margin-bottom: 10px
 }
 
 .author{
@@ -549,4 +549,10 @@ li {
   color: white;
   font-size: 10px;
   text-transform: uppercase;
+}
+
+.foodImage{
+  width: 100px;
+  padding: 10px;
+  float: left
 }

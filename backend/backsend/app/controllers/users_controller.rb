@@ -22,5 +22,6 @@ class UsersController < ApplicationController
             if @user.present?
                 @user.destroy
             end
+        redirect_to "http://localhost:3001"
     end
 end

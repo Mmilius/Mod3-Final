@@ -31,6 +31,9 @@ function createFoods(foods){
         let name = document.createElement("h2")
             name.className = "foodName"
 
+        let image = document.createElement("img")
+            image.className = "foodImage"
+
         let description = document.createElement("p")
             description.className = "foodDescription"
 
@@ -53,13 +56,14 @@ function createFoods(foods){
           //  authorPhoto.className = "food-authorphoto"
       
         name.innerText = food.name
+        image.src = food.image
         description.innerText = food.description
-        ingredients.innerText = `Ingredients:\n ${food.ingredients}`
+        ingredients.innerText = `Ingredients: \n ${food.ingredients}`
         flag.src = food.origin.flag
         author.innerText = `Submitted by ${food.user.name}`
        // authorPhoto.src = food.user.image
 
-        foodCard.append(name, description, ingredients, flag, author, updateFood, removeFood) //authorPhoto
+        foodCard.append(name, image, description, ingredients, flag, author, updateFood, removeFood) //authorPhoto
         foodStack.append(foodCard)
     })
     

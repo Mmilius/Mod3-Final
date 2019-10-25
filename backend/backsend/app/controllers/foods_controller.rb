@@ -16,7 +16,8 @@ class FoodsController < ApplicationController
             description: params[:description],
             ingredients: params[:ingredients],
             origin_id: params[:origin_id],
-            user_id: params[:user_id]
+            user_id: params[:user_id],
+            image: params[:image]
         )
         redirect_to "http://localhost:3001/foods.html"
     end
