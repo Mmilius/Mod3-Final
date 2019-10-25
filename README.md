@@ -27,6 +27,7 @@
 <li>Rails db:migrate<li>
 <li>Seed your database with rails db:seed command</li>
 <li>Run rails s and navigate to your localhoast in your web browser<li>
+</ol>
 
 <h2>Future Plans</h2>
 <ul>
@@ -36,3 +37,4 @@
 <li>Fix update feature to allow users to edit their food dishes and their profile</li>
 <li>Connect Google API for users to record exactly where they ate their food</li>
 <li>Connect Yelp API to enable users to find restaurants near them with similar food</li>
+</ul>
